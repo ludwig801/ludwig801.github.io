@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="iso-8859-15" />
+    <title>Luís | My Portfolio</title>
+    <link rel="stylesheet" href="content/css/style.css" />
+</head>
+<body>
+    <article>
+        <section id="picture">
+            <figure>
+                <a href=""><img src="content/img/pic.jpg" alt="profile picture" title="Profile Picture" /></a>
+            </figure>
+        </section>
+
+        <section id="tabs">
+            <nav class="col-full">
+                <ul>
+                    <li class="active">
+                        <a href="#intro" title="About Me">
+                            <span class="hidden-small">About Me</span>
+                            <span class="hidden-big"><img src="content/img/svg/info-0.svg" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#web-dev" title="Web Projects">
+                            <span class="hidden-small">Web Dev</span>
+                            <span class="hidden-big"><img src="content/img/svg/web-dev-1.svg" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" title="Other Projects">
+                            <span class="hidden-small">Projects</span>
+                            <span class="hidden-big"><img src="content/img/svg/projects-2.svg" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#game-dev" title="Games">
+                            <span class="hidden-small">Games</span>
+                            <span class="hidden-big"><img src="content/img/svg/games-0.svg" /></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#music" title="Music Works">
+                            <span class="hidden-small">Music</span>
+                            <span class="hidden-big"><img src="content/img/svg/music-0.svg" /></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-full">
+                <h4 id="current-tab" class="hidden-big">About Me</h4>
+            </div>
+        </section>
+
+        <section id="intro" class="active">
+            <div class="col-full space">
+                <h1 class="hidden-small">Hello!</h1>
+                <div class="col-full">
+                    <p>I was born in Porto, Portugal, in 5th June, 1994.</p>
+                    <p>Currently, I'm attending the <a href="https://sigarra.up.pt/feup/en/WEB_PAGE.INICIAL" id="feup" target="_blank">Faculty of Engineering of the University of Porto</a>, studying to be an Informatics and Computation Engineer.</p>
+                    <p>In my profissional area, I am focused especially in <a href="#projects">Graphical Computation</a> and <a href="#web-dev">Web Development</a>.</p>
+                    <p>
+                        In my free time, I love:<br />
+                        - Creating computer and mobile games (see my <a href="#game-dev">Games</a> area).<br />
+                        - Studying music and musical composition (see my <a href="#music">Music</a> area).
+                    </p>
+                </div>
+            </div>
+            <div class="col-full" id="contacts">
+                <h2 class="hidden-big">Where else to find me</h2>
+                <h1 class="hidden-small">Where else to find me</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/luís-magalhães-386b3396" id="linkedin" target="_blank">
+                                <img src="content/img/svg/linkedin.svg" alt="LinkedIn" title="LinkedIn" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ludwig801" id="github" target="_blank">
+                                <img src="content/img/svg/github.svg" alt="Github" title="Github" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ludwig801" id="facebook" target="_blank">
+                                <img src="content/img/svg/facebook.svg" alt="Facebook" title="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/u/0/114105910970664670513" id="googleplus" target="_blank">
+                                <img src="content/img/svg/google-plus.svg" alt="Google+" title="Google+" />
+                            </a>
+                        </li>
+                        <li class="text" title="Email"><input type="text" value="lmaga801@outlook.com" readonly="readonly" /></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="web-dev" class="hidden">
+            <div class="col-full">
+                <h1>This website</h1>
+                <p>That's right, created from scratch ;)</p>
+            </div>
+        </section>
+
+        <section id="projects" class="hidden">
+            <div class="col-full">
+                <h1>Projects</h1>
+                <div class="col-full"><p>Paragraph<br />Info<br />More info...</p></div>
+            </div>
+        </section>
+
+        <section id="game-dev" class="hidden">
+            <div class="col-full space">
+                <h1><a href="">Anarchy Bros</a></h1>
+                <div class="col-medium">
+                    <figure>
+                        <a href=""><img src="" alt="Anarchy Bros picture" title="Anarchy Bros Picture" /></a>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="col-medium">
+                    <p><span class="category">Plaftorms:</span> Android</p>
+                    <p><span class="category">Type:</span> Real-Time Strategy</p>
+                    <p><span class="category">Summary:</span></p>
+                </div>
+            </div>
+            <div class="col-full">
+                <h1><a href="">Strategos</a> <span class="greyed">- In Development</span></h1>
+                <div class="col-medium">
+                    <figure>
+                        <a href=""><img src="" alt="Strategos picture" title="Strategos Picture" /></a>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="col-medium">
+                    <p><span class="category">Plaftorms:</span> PC</p>
+                    <p><span class="category">Type:</span> Turn-Based + Real-Time Strategy</p>
+                    <p><span class="category">Summary:</span> Historic-based game, where you control a faction of old, in an attempt to destroy your enemies, becoming lord over the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="music" class="hidden">
+            <div class="col-full">
+                <h1>Music</h1>
+                <div class="col-full"><p>Paragraph<br />Info<br />More info...</p></div>
+            </div>
+        </section>
+    </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="content/scripts/tabs.js"></script>
+   <!-- <script src="content/scripts/svg.js"></script>-->
+</body>
+</html>
