@@ -76,18 +76,6 @@ ul li:not(:last-child) {
 	max-height: 0;
 }
 
-@media print {
-
-	.collapsed {
-		max-height: unset;
-	}
-
-	iframe {
-		display: none;
-	}
-
-}
-
 /* Profile info */
 
 #profile_photo {
@@ -96,6 +84,8 @@ ul li:not(:last-child) {
 	border-radius: 4rem;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
+
+/* Footer */
 
 footer {
 	text-align: left;
@@ -107,4 +97,19 @@ footer {
 	margin: auto;
 	background-color: #333;
 	font-size: 0.7rem;
+}
+
+/* Print queries */
+
+@media print {
+
+	.collapsed {
+		max-height: unset !important;
+	}
+	iframe {
+		display: none !important;
+	}
+	footer {
+		display: none !important;
+	}
 }
