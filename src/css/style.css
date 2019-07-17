@@ -1,0 +1,110 @@
+html * {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	color: #777;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.link {
+	padding: 0.25rem;
+	color: #ccc;
+	transition: all .2s;
+}
+
+a.link:hover {
+	color: #000;
+}
+
+h4, h5 {
+	color: #333;
+}
+
+h5 {
+	font-size: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 0.25rem;
+	margin-bottom: 0;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0.75rem;
+	margin: 0;
+}
+
+ul li:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+.box {
+	background: #f8f8f8;
+	padding: 0.75rem;
+	border: 1px solid #eee;
+	box-shadow: 1px 1px 4px rgba(127, 127, 127, 0.1);
+	transition: all .2s;
+	flex-grow: 1;
+	align-self: stretch;
+}
+
+/* Collapse */
+
+.collapse-toggle {
+	color: #007bff;
+}
+
+.collapse-toggle:hover {
+	cursor: pointer;
+}
+
+.collapse-target {
+	transition: all .2s;
+}
+
+.collapsed {
+	overflow: hidden;
+	max-height: 0;
+}
+
+@media print {
+
+	.collapsed {
+		max-height: unset;
+	}
+
+	iframe {
+		display: none;
+	}
+
+}
+
+/* Profile info */
+
+#profile_photo {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 4rem;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+	text-align: left;
+	position: fixed;
+	padding: 0.25rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #333;
+	font-size: 0.7rem;
+}

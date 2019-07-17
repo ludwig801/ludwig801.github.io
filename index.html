@@ -2,558 +2,587 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Luís Magalhães - Personal Webpage</title>
+	<title>Luís Magalhães - Personal Webpage</title>
 
-  <!-- Personal stylesheet -->
-  <link href="css/normalize.css" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="vendor/jquery-3.4.1/jquery.min.js"></script>
 
-  <!-- Personal stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/timeline.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="vendor/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="vendor/bootstrap-4.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Fontawesome -->
+	<link href="vendor/fontawesome-free-5.9.0-web/css/all.min.css" rel="stylesheet">
+
+	<!-- Timeline -->
+	<link href="src/css/timeline.css" rel="stylesheet">
+	<script src="src/js/timeline.js"></script>
+
+	<!-- Personal stylesheet -->
+	<link href="src/css/style.css" rel="stylesheet">
+	<script src="src/js/scripts.js"></script>
+
 </head>
 
 <body>
-  <div class="content">
 
-    <article id="profile_info">
-      <p class="title">Luís Magalhães</p>
+	<div class="container-fluid">
 
-      <div id="profile_photo">
-        <img alt="Profile photo" src="img/profile_photo_grayscale.jpg" />
-      </div>
-    </article>
+		<!-- Profile header -->
+		<section class="row">
 
-    <article id="profile_preferences">
-      <p class="title">Interests</p>
+			<div class="col-12 col-md-3 mb-4">
 
-      <article class="subtle collapsable" id="engineering">
-        <p class="subtitle collapse-toggle">Engineering<span class="toggle-label"></span></p>
-        <ul class="collapse-target">
-          <li>Artificial Intelligence and Decision-Making Systems</li>
-          <li>Procedural Content Generation (including Music-based generation)</li>
-          <li>User Interface Design (Web & Software)</li>
-          <li>Web Design</li>
-          <li>Game Design/Development</li>
-        </ul>
-      </article>
+				<div class="box text-center mb-4">
+					<h4>Luís Magalhães</h4>
+					<img class="img-fluid mb-3" id="profile_photo" alt="Profile photo" title="Profile photo" width="200" src="img/profile_photo_grayscale.jpg" />
+					<div class="text-left">
+						<p class="d-flex justify-content-between"><b>Birthday</b> <span>June, 5th</span></p>
+						<p class="d-flex justify-content-between"><b>Nacionality</b> <span>Portuguese</span></p>
+						<p class="d-flex justify-content-between"><b>Email</b> <a href="mailto:lmaga801@gmail.com">lmaga801@gmail.com</a></p>
 
-      <article class="subtle collapsable">
-        <p class="subtitle collapse-toggle">Game Development<span class="toggle-label"></span></p>
-        <ul class="collapse-target">
-          <li>Strategic Games</li>
-          <li>Procedural Generation and Modeling</li>
-          <li>Artificial Intelligence
-            <ul>
-              <li>Self-Learning & Evolution Algorithms</li>
-              <li>Dijkstra</li>
-              <li>A*</li>
-            </ul>
-          </li>
-          <li>Interaction Systems</li>
-        </ul>
-      </article>
+						<div class="d-flex text-center justify-content-center" style="font-size: 1.5rem;">
+							<a class="link mx-2" href="https://pt.linkedin.com/in/luís-magalhães-386b3396" target="_blank" title="LinkedIn Profile">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							<a class="link mx-2" href="https://github.com/ludwig801" target="_blank" title="Github Page">
+								<i class="fab fa-github"></i>
+							</a>
+							<a class="link mx-2" href="https://soundcloud.com/lu-s-magalh-es-6" target="_blank" title="SoundCloud Profile">
+								<i class="fab fa-soundcloud"></i>
+							</a>
+							<a class="link mx-2" href="mailto:lmaga801@gmail.com" target="_blank" title="Email me">
+								<i class="fas fa-envelope"></i>
+							</a>
+						</div>
 
-      <article class="subtle collapsable" id="arts">
-        <p class="subtitle collapse-toggle">Music<span class="toggle-label"></span></p>
-        <ul class="collapse-target">
-          <li>Musical Composition</li>
-          <li>Musical Animation</li>
-          <li>Music-based Procedural Generation</li>
-        </ul>
-      </article>
-    </article>
+					</div>
+				</div>
 
-    <article id="profile_studies">
-      <p class="title">Studies</p>
-      <timeline begin="2000" end="2016">
-        <timeline-entry begin="2006" end="2009" target="#esc"></timeline-entry>
-        <timeline-entry begin="2009" end="2012" target="#cic"></timeline-entry>
-        <timeline-entry begin="2012" end="2016" target="#feup"></timeline-entry>
-        <timeline-entry begin="2000" end="2014" target="#emp"></timeline-entry>
-        <timeline-entry begin="2015" end="2015" target="#erasmus"></timeline-entry>
-      </timeline>
-      <ul class="timeline-descriptions">
-        <li id="esc"><span>2006-2009 | </span>Escola Secundária dos Carvalhos</li>
-        <li id="cic"><span>2009-2012 | </span>Colégio dos Carvalhos</li>
-        <li id="feup"><span>2012- ...  | </span>FEUP - Master's Degree in Informatics and Computional Engineering<a href="https://www.fe.up.pt"
-            target="_blank"> [Website]</a></li>
-        <li id="emp"><span>2006-2009 | </span>Escola de Música de Perosinho - Musics degree with specialization in Violin and Bel Canto</li>
-        <li id="erasmus"><span>2006-2009 | </span>Erasmus program, in Lodz, Poland</li>
-      </ul>
-    </article>
+				<!-- Timeline -->
+				<div class="box mb-4">
+					<h4 class="text-center">Timeline</h4>
 
-    <article id="projects">
-      <p class="title">Projects</p>
+					<div class="timeline" begin="2000" end="2019">
+						<div class="timeline-entry" begin="2000" end="2014" target="#emp"></div>
+						<div class="timeline-entry" begin="2006" end="2009" target="#esc"></div>
+						<div class="timeline-entry" begin="2009" end="2012" target="#cic"></div>
+						<div class="timeline-entry" begin="2012" end="2017" target="#feup"></div>
+						<div class="timeline-entry" begin="2015" end="2015" target="#erasmus"></div>
+						<div class="timeline-entry" begin="2016" end="2017" target="#sceelix"></div>
+						<div class="timeline-entry" begin="2017" end="2019" target="#issho"></div>
+						<ul class="timeline-descriptions pt-4">
+							<li id="emp">Escola de Música de Perosinho - Musics degree with specialization in Violin and Bel Canto</li>
+							<li id="esc">Escola Secundária dos Carvalhos</li>
+							<li id="cic">Colégio dos Carvalhos</li>
+							<li id="feup">Master's Degree in Informatics and Computional Engineering at <a href="https://www.fe.up.pt" target="_blank">FEUP</a></li>
+							<li id="erasmus">Erasmus program, in Lodz, Poland</li>
+							<li id="sceelix">Master's thesis internship at <a href="https://www.sceelix.com" target="_blank">Sceelix</a></li>
+							<li id="issho">Working at <a href="http://www.issho.website/" target="_blank">ISSHO</a></li>
+						</ul>
+					</div>
+				</div>
 
-      <article class="subtle collapsable" id="it_1birthday">
-        <p class="subtitle collapse-toggle">iTBirthday<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Client</span>
-            <span class="content"><a title="Website da iTGrow" href="http://www.itgrow.pt/pt/inicio">iTGrow</a></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">Mobile & Desktop</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Tecnologies</span>
-            <span class="content">AngularJS<br>Node.js<br>Mongo Express<br>MongoDB<br>Ionic<br>HTML/CSS</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">This project was created within the course of "Laboratory for Project Management".<br><br>
-          It consisted in a platform to manage birthdays notifications and reminders, implemented through a hybrid interface (desktop/mobile) 
-          - with the help of the Ionic Framework - supported by a database and a backoffice for app management.<br><br>
-          The following functionalities (amongst others) were present in the app: automatic delivery of emails and SMS and automatized Facebook posting, along with
-          Outlook calendar integration.
-          </span>
-          </p>
-        </div>
-      </article>
+				<div class="box">
+					<h4 class="text-center">Interests</h4>
 
-      <article class="subtle collapsable" id="eye_bid">
-        <p class="subtitle collapse-toggle">EyeBid<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Type</span>
-            <span class="content">Web Application</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Tecnologies</span>
-            <span class="content">Javascript<br>PHP<br>SQL<br>HTML/CSS</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">A platform for managing online auctions and bids. It allows user creation, auctions creation, 
-              editing and managing auction content (such as images, duration, starting price, descriptions), biding on active auctions, notifications 
-              for the winning user, comment sections on each auction, search and filtered search of active auctions and a management backoffice to 
-              erase/modify auctions, bids, users and user comments.
-          </span>
-          </p>
-        </div>
-      </article>
-    </article>
+					<h5>Engineering</h5>
+					<ul>
+						<li>Artificial intelligence</li>
+						<li>Decision-making systems</li>
+						<li>Procedural content generation</li>
+						<li>UI design (web & software)</li>
+						<li>Web design</li>
+						<li>Game design / development</li>
+					</ul>
 
-    <article id="events">
-      <p class="title">Events</p>
+					<h5>Game Development</h5>
+					<ul>
+						<li>Strategy Games (real-time & turn-based)</li>
+						<li>Procedural Generation and modelling</li>
+						<li>AI: self-learning & evolution algorithms</li>
+						<li>Graph & path optimizations</li>
+						<li>Interaction systems</li>
+						<li>UI/UX design</li>
+					</ul>
 
-      <article class="subtle collapsable" id="android">
-        <p class="subtitle collapse-toggle">ENEI 2014<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Year</span>
-            <span class="content">2014</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">City</span>
-            <span class="content">Aveiro</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Main Workshops</span>
-            <span class="content">Android<br>Web Security</span>
-          </p>
-        </div>
-      </article>
+					<h5>Music</h5>
+					<ul>
+						<li>Musical composition, mainly soundtracks</li>
+						<li>Musical animation</li>
+						<li>Music-based procedural generation</li>
+					</ul>
+				</div>
+			</div>
 
-      <article class="subtle collapsable" id="unity">
-        <p class="subtitle collapse-toggle">ENEI 2015<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Year</span>
-            <span class="content">2015</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">City</span>
-            <span class="content">Coimbra</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Main Workshops</span>
-            <span class="content">Unity3D<br>Web Development</span>
-          </p>
-        </div>
-      </article>
+			<div class="col-12 col-md-9 mb-4">
 
-      <article class="subtle collapsable" id="sceelix">
-        <p class="subtitle collapse-toggle">Sceelix<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Year</span>
-            <span class="content">2016</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Place</span>
-            <span class="content">FEUP</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content">Participated in a workshop about the procedural generation tool 
-              <a href="http://www.sceelix.com">Sceelix.</a></span>
-          </p>
-        </div>
-      </article>
-    </article>
 
-    <article id="games">
-      <p class="title">Games</p>
 
-      <article class="subtle collapsable" id="strategos">
-        <p class="subtitle collapse-toggle">Strategos<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Real-Time Strategy / Turn-Based Strategy</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Engine</span>
-            <span class="content"><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">In this strategic challenge, the player commands the armies of antiquity, from the 
-            roman legions to the fierce barbarian hordes, in an epic strategic and diplomatic effort to become the undeniable leader
-            of the ancient world.<br><br>
-            Inspired by game series such as Civilization and Total War, this game aims to bring the best of both: challenging strategy, 
-            facing a stealthy and relenteless AI, as epic battles, carrying the player to mighty (and bloody) battlefields.<br><br>
-            The tools for map editing were made from scratch, and are being developed having in mind the possibility for
-            modding, being that the most popular community activity in this kind of games.
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Status</span>
-            <span class="content"><i>Under Development</i></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Alpha Phase</span>
-            <span class="content"><img alt="Strategos map" src="img/games/strategos.jpg" /></span>
-          </p>
-        </div>
-      </article>
+				<!-- Projects -->
+				<div class="box mb-4">
+					<h4 class="text-center">Projects</h4>
 
-      <article class="subtle collapsable" id="yin">
-        <p class="subtitle collapse-toggle">Yin<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Third-Person Action / RPG</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Engine</span>
-            <span class="content"><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Wiki</span>
-            <span class="content">
-            <a title="Yin: Github Repo" href="https://paginas.fe.up.pt/~ee09063/elasticmonkey/doku.php?id=start" target="_blank">See Here</a>
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Ingame Image</span>
-            <span class="content"><img alt="Yin" src="img/games/yin.jpg"/></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Github</span>
-            <span class="content">
-            <a title="Yin: Github Repo" href="https://github.com/elastic-monkey/Project-Yin" target="_blank">See Here</a>
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Status</span>
-            <span class="content">Final Version</span>
-          </p>
-        </div>
-      </article>
+					<div class="collapsable">
+						<h5 class="collapse-toggle">iTBirthday</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Client</td>
+									<td><a title="Website da iTGrow" href="http://www.itgrow.pt/pt/inicio">iTGrow</a></td>
+								</tr>
+								<tr>
+									<td>Platforms</td>
+									<td>Mobile & Desktop</td>
+								</tr>
+								<tr>
+									<td>Tecnologies</td>
+									<td>AngularJS<br>Node.js<br>Mongo Express<br>MongoDB<br>Ionic<br>HTML/CSS</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>This project was created within the course of "Laboratory for Project Management".<br><br>
+										It consisted in a platform to manage birthdays notifications and reminders, implemented through a hybrid interface (desktop/mobile)
+										- with the help of the Ionic Framework - supported by a database and a backoffice for app management.<br><br>
+										The following functionalities (amongst others) were present in the app: automatic delivery of emails and SMS and automatized Facebook posting, along with
+										Outlook calendar integration.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-      <article class="subtle collapsable" id="rc_feup">
-        <p class="subtitle collapse-toggle">RC FEUP<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Racing<br>Singleplayer + Multiplayer (offline)</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Engine</span>
-            <span class="content"><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Sinopse</span>
-            <span class="content text-justified">Racing game developed within the course of "Development of Computer Games".<br><br>
-            The player is given the opportunity to ride a small RC car in high speed tracks, allowing him to catch power-ups and power-downs,
-            in an effort to defeat his highscores or his friends'.
-            </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Trailer</span>
-            <span class="content video">
-              <iframe title="RC FEUP: Teaser Trailer" width="420" height="315" src="https://www.youtube.com/embed/gewu3Qu6pT4"></iframe> 
-            </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Github</span>
-            <span class="content">
-              <a title="RC FEUP: Github Repo" href="https://github.com/ludwig801/FEUP-DJCO-RCFEUP" target="_blank">See Here</a>
-            </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Status</span>
-            <span class="content">Final Version</span>
-          </p>
-        </div>
-      </article>
+					<div class="collapsable">
+						<h5 class="collapse-toggle">EyeBid</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Type</td>
+									<td>Web Application</td>
+								</tr>
+								<tr>
+									<td>Tecnologies</td>
+									<td>Javascript<br>PHP<br>SQL<br>HTML/CSS</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>A platform for managing online auctions and bids. It allows user creation, auctions creation,
+										editing and managing auction content (such as images, duration, starting price, descriptions), biding on active auctions, notifications
+										for the winning user, comment sections on each auction, search and filtered search of active auctions and a management backoffice to
+										erase/modify auctions, bids, users and user comments.</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
 
-      <article class="subtle collapsable" id="quoridor">
-        <p class="subtitle collapse-toggle">Quoridor<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Turn-Based Strategy (Board Game)</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Engine</span>
-            <span class="content"><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">Game developed for course of Artificial Intelligence. Brings for PC the board game <a title="Quoridor - Wikipedia" href="https://en.wikipedia.org/wiki/Quoridor" target="_blank">Quoridor</a>.
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Ingame Image</span>
-            <span class="content"><img alt="Quoridor" src="img/games/quoridor.jpg"/></span>
-          <p class="text-field">
-            <span class="label label-20">Github</span>
-            <span class="content">
-            <a title="Quoridor: Github Repo" href="https://github.com/ludwig801/FEUP-IART" target="_blank">See Here</a>
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Status</span>
-            <span class="content">Final Version</span>
-          </p>
-        </div>
-      </article>
+				<!-- Events -->
+				<div class="box mb-4">
+					<h4 class="text-center">Events</h4>
 
-      <article class="subtle collapsable" id="trench">
-        <p class="subtitle collapse-toggle">Trench<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Turn-Based Strategy (Board Game)</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Tecnologies</span>
-            <span class="content">C/C++<br>Prolog</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Sinopse</span>
-            <span class="content text-justified">PC development of the board game 
-            <a title="Trench Website" href="https://boardgamegeek.com/boardgame/102881/trench" target="_blank">Trench</a>.
-            The logic was implemented using Prolog.
-            </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Github</span>
-            <span class="content">
-            <a title="Dragon's Maze: Github Repo" href="https://github.com/kevinamorim/FEUP-LAIG-TP2" target="_blank">See Here</a>
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Estado</span>
-            <span class="content">Final Version</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Ingame Image</span>
-            <span class="content"><img alt="Trench game" src="img/games/trench.jpg"/></span>
-          </p>
-        </div>
-      </article>
+					<div class="collapsable" id="android">
+						<h5 class="collapse-toggle">ENEI '14</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Year</td>
+									<td>2014</td>
+								</tr>
+								<tr>
+									<td>City</td>
+									<td>Aveiro</td>
+								</tr>
+								<tr>
+									<td>Main Workshops</td>
+									<td>Android with Xamarin<br>Web Security</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-      <article class="subtle collapsable" id="dragon_maze">
-        <p class="subtitle collapse-toggle">Dragon's Maze<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Turn-Based Strategy / Action</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Engine</span>
-            <span class="content">Java / Swing</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">The player is placed in a maze, containing a dragon and a sword.<br><br>
-          The game's goal is to reach the sword before the dragon does, kill it and escape the maze. This game allows for 
-          creation, editing, saving and loading of maps.
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Github</span>
-            <span class="content">
-            <a title="Dragon's Maze: Github Repo" href="https://github.com/ludwig801/FEUP-LPOO" target="_blank">See Here</a>
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Status</span>
-            <span class="content">Final Version</span>
-          </p>
-        </div>
-      </article>
+					<div class="collapsable" id="android">
+						<h5 class="collapse-toggle">ENEI '15</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Year</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td>City</td>
+									<td>Coimbra</td>
+								</tr>
+								<tr>
+									<td>Main Workshops</td>
+									<td>Unity3D<br>Web Development</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-      <article class="subtle collapsable" id="anarchy_bros">
-        <p class="subtitle collapse-toggle">Anarchy Bros<span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Platforms</span>
-            <span class="content">PC<br>Android</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Genre</span>
-            <span class="content">Tower Defense / Real-Time Strategy</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Engine</span>
-            <span class="content"><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">"Tower Defense" inspired game, which allows the player to control to soldiers with crossbows, 
-            which can be placed in certain places of the map, and moved as the game progresses. The goal of the game is to avoid being killed by 
-            the sworming waves of enemies, collecting money from dead ones to upgrade weaponry and armour.
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Github</span>
-            <span class="content">
-            <a title="Anarchy Bros: Github Repo" href="https://github.com/ludwig801/Anarchy-Bros" target="_blank">See Here</a>
-          </span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Status</span>
-            <span class="content">Beta Version - <i>Project Suspended</i></span>
-          </p>
-        </div>
-      </article>
-    </article>
+					<div class="collapsable" id="sceelix">
+						<h5 class="collapse-toggle">Sceelix</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Year</td>
+									<td>2016</td>
+								</tr>
+								<tr>
+									<td>Place</td>
+									<td>FEUP</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>Participated in a workshop about the procedural generation tool <a href="http://www.sceelix.com">Sceelix.</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-    <article id="soundtracks">
-      <p class="title">Soundtracks</p>
+				</div>
 
-      <article class="subtle collapsable" id="ana_luisa_vale">
-        <p class="subtitle collapse-toggle">Retrato, Sombra, Grito <i>(Short Film)</i><span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Year</span>
-            <span class="content">2014</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Roles</span>
-            <span class="content">Composer<br>Musical Production</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">Composed and directed the soundtrack for the short film "Retrato, Sombra, Grito", 
-            from Ana Luísa Vale, former student of Porto's Unversity Faculty of the Fine Arts.</span>
-          </p>
-        </div>
-      </article>
+				<!-- Games -->
+				<div class="box mb-4" id="games">
+					<h4 class="text-center">Games</h4>
 
-      <article class="subtle collapsable" id="lingo">
-        <p class="subtitle collapse-toggle">Lingo <i>(Short Film)</i><span class="toggle-label"></span></p>
-        <div class="collapse-target">
-          <p class="text-field">
-            <span class="label label-20">Year</span>
-            <span class="content">2015</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Roles</span>
-            <span class="content">Composer<br>Musical Production</span>
-          </p>
-          <p class="text-field">
-            <span class="label label-20">Summary</span>
-            <span class="content text-justified">Composed and co-producted (along with 
-              <a title="Eduardo's LinkedIn Profile" href="https://www.linkedin.com/in/eduardo-tavares-158072b5">Eduardo Tavares</a>) the soundtrack
-              for the short film "Lingo",  from <a title="Daniel Roque's LinkedIn Profile" href="https://pt.linkedin.com/in/danielvroque">Daniel Roque</a>,
-              former student of Porto's Unversity Faculty of the Fine Arts, within his master's thesis.<br><br>
-              The film was previewed in over 50 countries and was nominated and awarded with several prizes, both national and internationally.</span>
-          </p>
-        </div>
-      </article>
-    </article>
+					<div class="collapsable" id="strategos">
+						<h5 class="collapse-toggle">Strategos</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>PC</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Real-Time Strategy / Turn-Based Strategy</td>
+								</tr>
+								<tr>
+									<td>Engine</td>
+									<td><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										In this strategic challenge, the player commands the armies of antiquity, from the
+										roman legions to the fierce barbarian hordes, in an epic strategic and diplomatic effort to become the undeniable leader
+										of the ancient world.<br><br>
+										Inspired by game series such as Civilization and Total War, this game aims to bring the best of both: challenging strategy,
+										facing a stealthy and relenteless AI, as epic battles, carrying the player to mighty (and bloody) battlefields.<br><br>
+										The tools for map editing were made from scratch, and are being developed having in mind the possibility for
+										modding, being that the most popular community activity in this kind of games.
+									</td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td><i>Under development</i></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<img class="img-fluid" alt="Strategos map" src="img/games/strategos.jpg" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-    <article id="contacts">
-      <p class="title">Contacts</p>
+					<div class="collapsable" id="yin">
+						<h5 class="collapse-toggle">Yin</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>PC</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Third-Person Action / RPG</td>
+								</tr>
+								<tr>
+									<td>Engine</td>
+									<td><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></td>
+								</tr>
+								<tr>
+									<td>Wiki</td>
+									<td><a title="Yin: Github Repo" href="https://paginas.fe.up.pt/~ee09063/elasticmonkey/doku.php?id=start" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Github</td>
+									<td><a title="Yin: Github Repo" href="https://github.com/elastic-monkey/Project-Yin" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td>Final Version</td>
+								</tr>
+								<tr>
+									<td>Ingame images</td>
+									<td class="text-center">
+										<img class="img-fluid" alt="Yin" src="img/games/yin.jpg" />
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-      <div>
-        <ul>
-          <li>
-            <a title="LinkedIn Profile" href="https://pt.linkedin.com/in/luís-magalhães-386b3396" target="_blank"><img alt="LinkedIn Profile" src="img/icons/linkedin-logo.png" /></a>
-          </li>
-          <li>
-            <a title="Github Page" href="https://github.com/ludwig801" target="_blank"><img alt="Github Page" src="img/icons/github-logo.png" /></a>
-          </li>
-          <li>
-            <a title="SoundCloud Profile" href="https://soundcloud.com/lu-s-magalh-es-6" target="_blank"><img alt="SoundCloud Profile" src="img/icons/soundcloud.png" /></a>
-          </li>
-          <li>
-            <a title="Email Luis" href="mailto:ei12054@fe.up.pt" target="_blank"><img alt="Email Me" src="img/icons/mail.png" /></a>
-          </li>
-        </ul>
-      </div>
-    </article>
+					<div class="collapsable" id="rc_feup">
+						<h5 class="collapse-toggle">RC FEUP</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>PC</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Racing<br>Singleplayer + Multiplayer (offline)</td>
+								</tr>
+								<tr>
+									<td>Engine</td>
+									<td><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										Racing game developed within the course of "Development of Computer Games".<br><br>
+										The player is given the opportunity to ride a small RC car in high speed tracks, allowing him to catch power-ups and power-downs,
+										in an effort to defeat his highscores or his friends'.
+									</td>
+								</tr>
+								<tr>
+									<td>Github</td>
+									<td><a title="RC FEUP: Github Repo" href="https://github.com/ludwig801/FEUP-DJCO-RCFEUP" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td>Final Version</td>
+								</tr>
+								<tr>
+									<td>Trailer</td>
+									<td>
+										<iframe title="RC FEUP: Teaser Trailer" width="420" height="315" src="https://www.youtube.com/embed/gewu3Qu6pT4"></iframe>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-    <article id="license" class="collapsable">
-      <p class="subtitle">Website</p>
+					<div class="collapsable" id="quoridor">
+						<h5 class="collapse-toggle">Quoridor</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>PC</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Turn-Based Strategy (Board Game)</td>
+								</tr>
+								<tr>
+									<td>Engine</td>
+									<td><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										Game developed for course of Artificial Intelligence.
+										Brings for PC the board game <a title="Quoridor - Wikipedia" href="https://en.wikipedia.org/wiki/Quoridor" target="_blank">Quoridor.
+									</td>
+								</tr>
+								<tr>
+									<td>Github</td>
+									<td><a title="Quoridor: Github Repo" href="https://github.com/ludwig801/FEUP-IART" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td>Final Version</td>
+								</tr>
+								<tr>
+									<td>Ingame Image</td>
+									<td><img class="img-fluid" alt="Quoridor" src="img/games/quoridor.jpg" /></td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-      <div>
-        <p class="collapse-toggle">This website and its content, including css styling and scripting were create by Luís Magalhães (@ 2016). The icons
-          are from
-          <a title="FlatIcon Website" href="https://www.flaticon.com" target="_blank"> flaticon</a>, and the authors are
-          mentioned below. <span class="toggle-label"></span>
-          <ul class="collapse-target">
-            <li><img alt="LinkedIn" src="img/icons/linkedin-logo.png" /> - SimpleIcon</li>
-            <li><img alt="Github" src="img/icons/github-logo.png" /> - Dave Gandy</li>
-            <li><img alt="SoundCloud" src="img/icons/soundcloud.png" /> - Pixel Buddha</li>
-            <li><img alt="Email" src="img/icons/mail.png" /> - SimpleIcon</li>
-          </ul>
-      </div>
-    </article>
-  </div>
+					<div class="collapsable" id="trench">
+						<h5 class="collapse-toggle">Trench</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>PC</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Turn-Based Strategy (Board Game)</td>
+								</tr>
+								<tr>
+									<td>Tecnologies</td>
+									<td>C/C++<br>Prolog</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										PC development of the board game <a title="Trench Website" href="https://boardgamegeek.com/boardgame/102881/trench" target="_blank">Trench</a>.
+										The logic was implemented using Prolog.
+									</td>
+								</tr>
+								<tr>
+									<td>Github</td>
+									<td><a title="Trench" href="https://github.com/kevinamorim/FEUP-LAIG-TP2" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td>Final Version</td>
+								</tr>
+								<tr>
+									<td>Ingame Image</td>
+									<td><img class="img-fluid" alt="Trench game" src="img/games/trench.jpg" /></td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-  <footer>Luís Magalhães @ 2016</footer>
+					<div class="collapsable" id="dragon_maze">
+						<h5 class="collapse-toggle">Dragon's Maze</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>PC</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Turn-Based Strategy / Action</td>
+								</tr>
+								<tr>
+									<td>Technologies</td>
+									<td>Java / Swing</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										The player is placed in a maze, containing a dragon and a sword.<br><br>
+										The game's goal is to reach the sword before the dragon does, kill it and escape the maze. This game allows for
+										creation, editing, saving and loading of maps.
+									</td>
+								</tr>
+								<tr>
+									<td>Github</td>
+									<td><a title="Dragon's Maze: Github Repo" href="https://github.com/ludwig801/FEUP-LPOO" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td>Final Version</td>
+								</tr>
+							</table>
+						</div>
+					</div>
 
-  <!-- jQuery (necessary for JavaScript) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+					<div class="collapsable" id="anarchy_bros">
+						<h5 class="collapse-toggle">Anarchy Bros</h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Platforms</td>
+									<td>Android</td>
+								</tr>
+								<tr>
+									<td>Genre</td>
+									<td>Tower Defense / Real-Time Strategy</td>
+								</tr>
+								<tr>
+									<td>Engine</td>
+									<td><a title="Unity3D Website" href="https://unity3d.com/pt" target="_blank">Unity3D</a></td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										"Tower Defense" inspired game, which allows the player to control to soldiers with crossbows,
+										which can be placed in certain places of the map, and moved as the game progresses. The goal of the game is to avoid being killed by
+										the sworming waves of enemies, collecting money from dead ones to upgrade weaponry and armour.
+									</td>
+								</tr>
+								<tr>
+									<td>Github</td>
+									<td><a title="Anarchy Bros: Github Repo" href="https://github.com/ludwig801/Anarchy-Bros" target="_blank">See Here</a></td>
+								</tr>
+								<tr>
+									<td>Status</td>
+									<td>Beta Version - <i>Project Suspended</i></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
 
-  <script src="js/scripts.js"></script>
-  <script src="js/timeline.js"></script>
+				<div class="box" id="soundtracks">
+					<h4>Soundtracks</h4>
+
+					<div class="collapsable" id="ana_luisa_vale">
+						<h5 class="subtitle collapse-toggle">Retrato, Sombra, Grito <i>(Short Film)</i></h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Year</td>
+									<td>2014</td>
+								</tr>
+								<tr>
+									<td>Roles</td>
+									<td>Composer<br>Musical Production</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td class="text-justify">
+										Composed and directed the soundtrack for the horror short film "Retrato, Sombra, Grito",
+										from Ana Luísa Vale, former student of Porto's Unversity Faculty of the Fine Arts.
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="collapsable" id="lingo">
+						<h5 class="collapse-toggle">Lingo <i>(Short Film)</i></h5>
+						<div class="collapse-target">
+							<table class="table">
+								<tr>
+									<td>Year</td>
+									<td>2015</td>
+								</tr>
+								<tr>
+									<td>Roles</td>
+									<td>Composer<br>Musical Co-production</td>
+								</tr>
+								<tr>
+									<td>Summary</td>
+									<td>
+										Composed and co-producted (along with
+										<a title="Eduardo's LinkedIn Profile" href="https://www.linkedin.com/in/eduardo-tavares-158072b5">Eduardo Tavares</a>) the soundtrack
+										for the short film "Lingo", from <a title="Daniel Roque's LinkedIn Profile" href="https://pt.linkedin.com/in/danielvroque">Daniel Roque</a>,
+										former student of Porto's Unversity Faculty of the Fine Arts, within his master's thesis.<br><br>
+										The film was previewed in over 50 countries and was nominated and awarded with several prizes, both national and internationally.
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+	<footer>Luís Magalhães @ 2016</footer>
 </body>
 
 </html>
